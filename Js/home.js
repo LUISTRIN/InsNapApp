@@ -1,4 +1,4 @@
-import {db} from "./firebase.js"
+import {db} from "./firebaseConfig.js"
 import {collection, getDocs, query, orderBy, limit} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js"
 
 document.addEventListener("DOMContentLoaded", async() => {
