@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsNap</title>
+    <link rel="stylesheet" href="./Styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>InsNap</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Cadastre-se</a>
+        </nav>
+    </header>
+
+    <main class="form-container">
+        <h2>Entrar</h2>
+        <p id="form">Faça login para acessar o conteúdo</p>
+        <form id="login-form">
+            <label>
+                <span>Email:</span>
+                <input type="email" id="email" placeholder="Digite seu email" required/>
+            </label>
+            <label>
+                <span>Senha:</span>
+                <input type="password" id="password" placeholder="Digite sua senha" required/>
+            </label>
+            <button type="submit" class="btn">Entrar</button>
+            <p id="login-error" class="error"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>2025 InsNap. Todos os direitos reservados.</p>
+    </footer>
+
+    <script type="module" src="./Js/auth.js"></script>
+    
+</body>
+</html>

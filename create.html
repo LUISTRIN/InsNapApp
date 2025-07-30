@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Post</title>
+    <link rel="stylesheet" href="./Styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>InsNap</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html" class="auth-only">Dashboard</a>
+            <a href="create.html" class="auth-only">Criar Post</a>
+            <a href="login.html" class="guest-only">Entrar</a>
+            <a href="register.html" class="guest-only">Cadastre-se</a>
+            <button id="logout" class="auth-only">Sair</button>
+        </nav>
+    </header>
+
+    <main class="form-container">
+        <h2>Criar novo POst</h2>
+        <form id="create-post">
+            <label for="title">Título</label>
+            <input type="text" id="title" name="title" required placeholder="Dgite o Título do seu Post">
+
+            <label for="image">URL da imagem: </label>
+            <input type="url" id="image" name="image" required placeholder="https://exemplo.com/imagem.jpg">
+
+            <label for="body">Conteúdo: </label>
+            <textarea name="body" id="body" required placeholder="Digite o conteúdo do seu Post"></textarea>
+
+            <label for="tags">Tags (Lembre-se que precisa ser separado por vírgula): </label>
+            <input type="text" id="tags" name="tags" placeholder="exemplo: tech, web, design">
+
+            <button type="submit" class="btn">Publicar</button>
+            <p id="create-err" class="error"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>InsNap &copy; 2025</p>
+    </footer>
+
+    <script type="module" src="./Js/firebase.js"></script>
+    <script type="module" src="./Js/auth.js"></script>
+    <script type="module" src="./Js/utils.js"></script>
+    <script type="module" src="./Js/create.js"></script>
+    
+</body>
+</html>

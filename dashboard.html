@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Posts</title>
+    <link rel="stylesheet" href="./Styles/style.css">
+</head>
+<body>
+    <header>
+       <h1>InsNap</h1> 
+       <nav>
+       <a href="index.html">Home</a>
+            <a href="dashboard.html" class="auth-only">Dashboard</a>
+            <a href="create.html" class="auth-only">Criar Post</a>
+            <a href="login.html" class="guest-only">Entrar</a>
+            <a href="register.html" class="guest-only">Cadastre-se</a>
+            <button id="logout" style="display: none">Sair</button>
+    </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <h2>Meus Posts</h2>
+        <p id="welcome"></p>
+
+        <div id="posts"></div>
+    </main>
+
+    <footer>
+        <p>InsNap &copy; 2025</p>
+    </footer>
+
+    <script type="module" src="./Js/firebase.js"></script>
+    <script type="module" src="./Js/auth.js"></script>
+    <script type="module" src="./Js/utils.js"></script>
+    <script type="module" src="./Js/dashboard.js"></script>
+</body>
+</html>
